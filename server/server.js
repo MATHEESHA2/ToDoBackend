@@ -14,7 +14,7 @@ app.use(express.json());
 app.use('/api/tasks', tasksRouter);
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect(process.env.MONGOURL, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
